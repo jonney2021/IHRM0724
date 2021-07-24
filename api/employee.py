@@ -6,7 +6,6 @@
 """
 
 # 导包
-
 # 创建接口类
 import requests
 import app
@@ -37,4 +36,3 @@ class EmployeeAPI:
     def delete_employee(self,employee_id):
         url = self.url_delete_employee.format(employee_id)
         return requests.delete(url=url,headers=app.headers_data)
-# 封装接口
