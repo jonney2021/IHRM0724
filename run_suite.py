@@ -13,7 +13,8 @@ suite.addTest(unittest.makeSuite(TestLogin))
 suite.addTest(TestLogin("test01_case001"))   # 解决员工管理接口依赖登录接口问题
 suite.addTest(unittest.makeSuite(TestEmployee))
 # 指定测试报告的路径
-report = "./report/report-{}.html".format(time.strftime("%Y%m%d-%H%M%S"))
+# report = "./report/report-{}.html".format(time.strftime("%Y%m%d-%H%M%S"))
+report = "./report/report.html"
 # 打开文件流
 with open(report,"wb") as f:
     # 创建HTMLTestRunner运行器
